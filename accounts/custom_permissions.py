@@ -6,8 +6,6 @@ class IsDefaultRole(BasePermission):
         user = request.user
         if user.role == 'DE':
             return False
-    def has_permission(self, request, view):
-        return super().has_permission(request, view)
 
 class IsBusinessOwner(BasePermission):
     def has_permission(self, request, view):

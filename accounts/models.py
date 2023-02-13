@@ -153,8 +153,6 @@ class Item(Timestampedmodel):
                 raise ValidationError(f'Image size must not exceed {self.MAX_IMAGE_SIZE / 1024 / 1024} MB')
         super().save(*args, **kwargs)
 
-# class ImageUploader(models.Model):
-#     MAX_IMAGES = 10
-#     MAX_IMAGE_SIZE = 3 * 1024 * 1024 # 3 MB
+
 
    
